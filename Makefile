@@ -13,7 +13,7 @@ all:
 	@echo "make buildrpm - Generate a rpm package"
 	@echo "make builddeb - Generate a deb package"
 	@echo "make clean - Get rid of scratch and byte files"
-	@echo "make debrepo - Create Packages.gz file suitable for github apt repo"
+	@echo "make debrepo - Copy packages from testing repo into stable repo"
 	@echo "make debrepo-testing - Create or update the testing repo"
 
 source:
@@ -38,11 +38,11 @@ builddeb:
 
 debrepo:
 ifeq ($(CURBRANCH), $(shell echo -n 'gh-pages'))
-	for CHANGEFILE in `ls *.changes`; do \
-		cd repos/apt; \
-		reprepro --ignore=wrongdistribution -Vb . include stable ../../$$CHANGEFILE; \
-		cd ../.. ; \
-	done
+	cd repos/apt; \
+	for PACKAGE in `reprepro list testing | awk '{ print $$2 }' | sort | uniq`; do \
+		reprepro copy stable testing $$PACKAGE; \
+	done; \
+	cd ../..
 # TODO: loop over SUBPROJ/debian/changelog and copy them into repos/apt. We
 # need to find out the proper destination filename which should be the name of
 # the built .deb file but .changes instead. Perhaps it is easier to find the
