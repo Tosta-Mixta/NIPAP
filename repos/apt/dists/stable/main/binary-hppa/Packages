@@ -1,51 +1,51 @@
 Package: nipap-cli
-Version: 0.25.1-1
+Version: 0.26.4-1
 Architecture: all
 Maintainer: Lukas Garberg <lukas@spritelink.net>
-Installed-Size: 92
+Installed-Size: 99
 Depends: python (>= 2.4), python-pynipap
 Priority: optional
 Section: python
-Filename: pool/main/n/nipap-cli/nipap-cli_0.25.1-1_all.deb
-Size: 26668
-SHA256: a718b07de8d97cca2fc32cdca09c677f4a045c97bac106d40d369eb5cb26830c
-SHA1: ef0bb02d4442ed83f86d9e831c4ff648382415e2
-MD5sum: d16eb2fea18d0c0786770c3a6183ce9a
+Filename: pool/main/n/nipap-cli/nipap-cli_0.26.4-1_all.deb
+Size: 25092
+SHA256: c8c5b782915eedfd28d6093cfb537f19ecddc8eda8504160740a3e7ccb8beb9b
+SHA1: f82332df7c1923b1bc1bb7c754db8e2ce7b95cca
+MD5sum: 78aae3ee15a38c8b118c8a0f76444a2c
 Description: Neat IP Address Planner
  The Neat IP Address Planner, NIPAP, is a system built for efficiently managing
  large amounts of IP addresses. This is the shell command.
 
 Package: nipap-common
 Source: nipap
-Version: 0.25.0-1
+Version: 0.26.4-1
 Architecture: all
 Maintainer: Lukas Garberg <lukas@spritelink.net>
-Installed-Size: 200
+Installed-Size: 209
 Depends: python (>= 2.7), python-pysqlite2, python-ldap, python-ipy
 Priority: optional
 Section: python
-Filename: pool/main/n/nipap/nipap-common_0.25.0-1_all.deb
-Size: 46188
-SHA256: 3b9d49a365f60bc5ed7619be955dc7473c2e9fe67ae3f57db25d7141883cb933
-SHA1: 453a7b74610e958b4ad1cbcb9757c7aa047947ec
-MD5sum: 95b55d8177ac26023c911e2dee0ca019
+Filename: pool/main/n/nipap/nipap-common_0.26.4-1_all.deb
+Size: 39394
+SHA256: 9b216a6e99725714cbf6934f2133c4e6ef7f91aedc969cad93d1ed2f351923dc
+SHA1: bee8080a12e5763656b82f6ab6c94e2d0a82ccaa
+MD5sum: b0989a4f47a33f9ccb5468597fd00032
 Description: Neat IP Address Planner
  The Neat IP Address Planner, NIPAP, is a system built for efficiently managing
  large amounts of IP addresses. This is the common libraries.
 
 Package: nipap-whoisd
-Version: 0.25.1-1
+Version: 0.26.4-1
 Architecture: all
 Maintainer: Kristian Larsson <kristian@spritelink.net>
 Installed-Size: 26
 Depends: debconf (>= 0.5) | debconf-2.0, python (>= 2.4), python-pynipap
 Priority: optional
 Section: python
-Filename: pool/main/n/nipap-whoisd/nipap-whoisd_0.25.1-1_all.deb
-Size: 11772
-SHA256: 94881a95a95bf575f796d2705a02932b0fea78e0cd1b8ece508bc317fc9f4f6c
-SHA1: 4ec5bed14f0114206763828e25719a2931bf0617
-MD5sum: f4841b52016ad0d894c5f41428e02187
+Filename: pool/main/n/nipap-whoisd/nipap-whoisd_0.26.4-1_all.deb
+Size: 11958
+SHA256: 3e4b99212eb17ec0aea144ce86df9ff3672064d7d2af5c90eb55adc1e89557db
+SHA1: cd6b955519dccd66f0662d2693b18dd46b962735
+MD5sum: 292e42677e9b01fd4539267bb19e0d33
 Description: Neat IP Address Planner
  The NIPAP whois daemon provides a whois-style interface for quering data in
  the NIPAP backend. It receives whois queries, translates these into search
@@ -53,36 +53,36 @@ Description: Neat IP Address Planner
  format, back to the client.
 
 Package: nipap-www
-Version: 0.25.1-1
+Version: 0.26.4-1
 Architecture: all
 Maintainer: Lukas Garberg <lukas@spritelink.net>
-Installed-Size: 1113
+Installed-Size: 1837
 Depends: debconf, python (>= 2.4), debconf (>= 0.5) | debconf-2.0, python-pylons (>= 1.0), python-pynipap, nipap-common, python-jinja2
 Priority: optional
 Section: web
-Filename: pool/main/n/nipap-www/nipap-www_0.25.1-1_all.deb
-Size: 339800
-SHA256: 2083c2fb0e7c0387c107569613ae486fe42770d821d2c48cc633af0aca68e741
-SHA1: e313f8581d1448709cc6a36d2c38aaf26040887c
-MD5sum: a38dc4dadac0c8c04c2fe3eeffef55cb
+Filename: pool/main/n/nipap-www/nipap-www_0.26.4-1_all.deb
+Size: 402894
+SHA256: f572d84f5795bdfcbfd52c9942c073fb497e398c885e4c597236986477a260f3
+SHA1: 851474c01513a6fbaab731699df735b5eeca57fc
+MD5sum: 7a577d1edc889e8e8d2b24c830c6bbe2
 Description: web frontend for NIPAP
  A web UI for the NIPAP IP address planning service.
 Python-Version: 2.7
 
 Package: nipapd
 Source: nipap
-Version: 0.25.0-1
+Version: 0.26.4-1
 Architecture: all
 Maintainer: Lukas Garberg <lukas@spritelink.net>
-Installed-Size: 72
-Depends: debconf, nipap-common, python (>= 2.7), debconf (>= 0.5) | debconf-2.0, python-psycopg2, postgresql (>= 9.1), postgresql-9.1-ip4r (>= 2.0), python-flask, python-flask-xml-rpc, python-flask-compress, python-tornado
+Installed-Size: 103
+Depends: debconf, nipap-common, python (>= 2.7), debconf (>= 0.5) | debconf-2.0, python-psycopg2, postgresql (>= 9.1), postgresql-9.1-ip4r (>= 2.0) | postgresql-9.3-ip4r (>= 2.0), python-flask, python-flask-xml-rpc, python-flask-compress, python-tornado
 Priority: optional
 Section: python
-Filename: pool/main/n/nipap/nipapd_0.25.0-1_all.deb
-Size: 29372
-SHA256: 31bbb4caad5c7bab8f65006d75377ec48e64d0cbe38be9de76e461fda273c78a
-SHA1: bec810a68bb06a2144c71e12ac9c68246e53fada
-MD5sum: a65553c8698da759a3dd4975eccbc27e
+Filename: pool/main/n/nipap/nipapd_0.26.4-1_all.deb
+Size: 31170
+SHA256: 0f93f09445ee918d22f29f2a1c329be7979166ed67b8414fe3a8ceba188b16e9
+SHA1: 44a71c0452f74840facc2d12f0a812768900c1c3
+MD5sum: 13e0dc4107c238d6515c0b6b615ba562
 Description: Neat IP Address Planner XML-RPC daemon
  The Neat IP Address Planner, NIPAP, is a system built for efficiently managing
  large amounts of IP addresses. This is the XML-RPC daemon.
@@ -138,18 +138,18 @@ Description: Adds support for creating XML-RPC APIs to Flask
 
 Package: python-pynipap
 Source: pynipap
-Version: 0.25.1-1
+Version: 0.26.4-1
 Architecture: all
 Maintainer: Lukas Garberg <lukas@spritelink.net>
-Installed-Size: 40
+Installed-Size: 44
 Depends: python (>= 2.4)
 Priority: optional
 Section: python
-Filename: pool/main/p/pynipap/python-pynipap_0.25.1-1_all.deb
-Size: 15494
-SHA256: 9393a95f829473679649a969243134a1051fdf8949daf5c0274dce69094ea9e2
-SHA1: d6828151cc50bacb0e2a3ac1a1d15d17e99a2f73
-MD5sum: d593282d6da2c63fb992649893776d73
+Filename: pool/main/p/pynipap/python-pynipap_0.26.4-1_all.deb
+Size: 15282
+SHA256: a98e3b63b2be59d398d1872e8a93f37de2b1b00536db9c9c087e486930499f2e
+SHA1: 706dcdd893685d05eb50ff6e7d284c8bf515ba72
+MD5sum: df873a65f5e02365e8493a00b4a36769
 Description: Python module for accessing NIPAP
  This package contains a client library for NIPAP. It's function is similar to
  a simple ORM, which hides much of the complexity of working directly against
